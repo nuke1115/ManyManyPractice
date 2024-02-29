@@ -40,7 +40,6 @@ namespace aSimpleStack
             _index--;
             return returnValue;
         }
-
         public T Peek()
         {
             return _internalList[_index];
