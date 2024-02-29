@@ -99,20 +99,6 @@ namespace Bitfuck
         {
             
         }
-        [Flags]
-        public enum TestEnum
-        {
-            Test1 = 0x01,
-            Test2 = 0x02,
-            Test3 = 0x03,
-            Test4 = 0x04,
-            Test5 = 0b0101,
-            Test6 = 0b0110,
-            Test7 = 0b0111,
-            Test8 = 0b1000,
-            Test9 = 0b1001,
-            Test10 = 0b1010
-        }
 
         public static void BitSwapTest()
         {
