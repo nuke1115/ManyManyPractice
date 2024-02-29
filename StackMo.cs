@@ -16,7 +16,7 @@ namespace aSimpleStack
 
         public int Count { get => _count; }
 
-        public new Type GetType { get => _type; }
+        public Type GetItemType { get => _type; }
 
         public void Clear()
         {
@@ -40,6 +40,7 @@ namespace aSimpleStack
             _index--;
             return returnValue;
         }
+
         public T Peek()
         {
             return _internalList[_index];
@@ -49,7 +50,7 @@ namespace aSimpleStack
         {
             return _count != 0 && _internalList.LastIndexOf(Value) != -1;
         }
-        
-        
+
+
     }
 }

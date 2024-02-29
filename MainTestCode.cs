@@ -36,7 +36,12 @@ namespace NonNonN
             simpleStack1.Push(b);
             simpleStack1.Push(c);
 
-            Console.WriteLine(simpleStack1.Peek()[0]);
+            Console.WriteLine(testStack1.Peek());
+            Console.WriteLine(testStack1.Pop());
+            Console.WriteLine(testStack1.Count);
+            Console.WriteLine(testStack1.Peek());
+
+            //asdf
 
         }
 
