@@ -5,6 +5,9 @@ using Bitfuck;
 using aSimpleStack;
 using aSImpleQueue;
 using System;
+using aQueue;
+using System.ComponentModel;
+using System.Numerics;
 
 namespace NonNonN
 {
@@ -22,56 +25,31 @@ namespace NonNonN
             //BitPrac.BitMaskTest();
             //BitPrac.BitTest();
 
+            CircularQueue<int> circularQueue = new CircularQueue<int>(3);
+            
+            circularQueue.Enqueue(1);
+            Console.WriteLine(circularQueue.Dequeue());
+
+			circularQueue.Enqueue(2);
+			Console.WriteLine(circularQueue.Dequeue());
+
+			circularQueue.Enqueue(3);
+			Console.WriteLine(circularQueue.Dequeue());
+
+			circularQueue.Enqueue(4);
+			Console.WriteLine(circularQueue.Dequeue());
+
+			circularQueue.Enqueue(5);
+			Console.WriteLine(circularQueue.Dequeue());
+
+			circularQueue.Enqueue(6);
+			Console.WriteLine(circularQueue.Dequeue());
+
+			circularQueue.Enqueue(7);
+			Console.WriteLine(circularQueue.Dequeue());
 
 
-            int[] a = { 1, 2, 3, 4 };
-            int[] b = { 1, 2, 3, 4 };
-            int[] c = { 1, 2, 3, 4 };
-
-            LinkedList<int> l = new LinkedList<int>();
-
-           
-            SimpleQueue<int> simpleQueue = new SimpleQueue<int>();
-
-            Console.WriteLine(simpleQueue.GetItemCount);
-            Console.WriteLine(simpleQueue.GetItemType);
-            Console.WriteLine("=====");
-            simpleQueue.Enqueue(1);
-            Console.WriteLine(simpleQueue.GetItemCount);
-            simpleQueue.Enqueue(2);
-            Console.WriteLine(simpleQueue.GetItemCount);
-            simpleQueue.Enqueue(3);
-            Console.WriteLine(simpleQueue.GetItemCount);
-            Console.WriteLine("=====");
-            Console.WriteLine(simpleQueue.GetItemCount);
-            Console.WriteLine("=====");
-            Console.WriteLine(simpleQueue.Peek());
-            Console.WriteLine(simpleQueue.GetItemCount);
-            Console.WriteLine(simpleQueue.Dequeue());
-            Console.WriteLine(simpleQueue.GetItemCount);
-            Console.WriteLine(simpleQueue.Dequeue());
-            Console.WriteLine(simpleQueue.GetItemCount);
-            Console.WriteLine("=====");
-            Console.WriteLine(simpleQueue.Contains(1));
-            Console.WriteLine(simpleQueue.Contains(3));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            //asdf
-            Stack<int> stack = new Stack<int>();
-            SimpleStack<int> simpleStack = new SimpleStack<int>();
-        }
+		}
 
 
 
@@ -89,3 +67,4 @@ namespace NonNonN
         }
     }
 }
+
